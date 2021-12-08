@@ -1,0 +1,167 @@
+/* line 1, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+/* line 9, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+ul {
+  list-style: none; }
+
+/* line 13, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+a {
+  text-decoration: none; }
+
+/* line 17, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #283d50;
+  margin-bottom: 60px; }
+
+/* line 24, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+h3 {
+  color: #444;
+  font-size: 24px;
+  margin-bottom: 20px; }
+
+/* line 30, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #283d50; }
+
+/* line 37, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+header {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
+  /* line 44, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  header nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 10px; }
+    /* line 49, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+    header nav img {
+      height: 25px; }
+    /* line 53, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+    header nav ul {
+      flex: 1;
+      display: none; }
+      @media (min-width: 800px) {
+        /* line 53, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+        header nav ul {
+          display: flex;
+          justify-content: flex-end; } }
+      /* line 61, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+      header nav ul a {
+        color: #004289;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 15px;
+        margin-left: 15px; }
+
+/* line 73, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+.hero {
+  padding: 150px 0px;
+  background: url("/img/intro-bg.png") center bottom no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
+  /* line 80, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .hero .flex-row {
+    padding: 0 32px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 80, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+      .hero .flex-row {
+        flex-direction: row; } }
+  /* line 90, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .hero h2 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 32px;
+    text-align: center; }
+    @media (min-width: 1000px) {
+      /* line 90, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+      .hero h2 {
+        text-align: initial;
+        font-size: 48px; } }
+  /* line 101, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .hero .left {
+    flex: 1;
+    order: 2;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 101, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+      .hero .left {
+        order: 1; } }
+  /* line 111, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .hero .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 1000px) {
+      /* line 111, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+      .hero .buttons {
+        flex-direction: row; } }
+    /* line 119, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+    .hero .buttons .btn {
+      text-align: center;
+      width: 200px;
+      margin-bottom: 16px; }
+      @media (min-width: 1000px) {
+        /* line 119, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+        .hero .buttons .btn {
+          margin-right: 16px; } }
+  /* line 129, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .hero img {
+    flex: 1;
+    order: 1;
+    width: 50%; }
+    @media (mix-width: 1000px) {
+      /* line 129, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+      .hero img {
+        order: 2; } }
+
+/* line 140, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+.container {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+/* line 145, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+.flex-row {
+  display: flex; }
+
+/* line 149, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 14px 40px;
+  background-color: #077bff;
+  border-radius: 45px;
+  color: #fff;
+  border: 2px solid transparent;
+  font-weight: 600;
+  transition: 500ms ease all; }
+  /* line 160, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .btn:hover {
+    background-color: transparent;
+    border-color: #fff; }
+
+/* line 166, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+.btn-light {
+  background-color: transparent;
+  border-color: #fff; }
+  /* line 170, ../../../../../../../../../../../../../Users/lemao/Documents/development/full-modern-wesbite-main/scss/style.scss */
+  .btn-light:hover {
+    background-color: #077bff; }
+
+/*# sourceMappingURL=style.css.map */
